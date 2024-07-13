@@ -1,0 +1,30 @@
+<div *ngIf="account" class="accountPanel">
+  <div>
+    <h2>{{ account?.email }}</h2>
+    <ul>
+      <li *ngFor="let course of account?.courses">
+        <mat-card class="mat-card">
+          <mat-card-header>
+            <mat-card-title>
+                <p>{{course.name}}</p>
+            </mat-card-title>
+            <mat-card-subtitle> {{course.institution}} </mat-card-subtitle>
+            <mat-card-subtitle> Course grade percentage: {{getCourseGradePercentString(course)}} </mat-card-subtitle>
+            <mat-card-subtitle> Course grade Total: {{getCourseGradeTotalString(course)}} </mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p> {{course.description}}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="triggerFocusChange(course)"><mat-icon>open_in_full</mat-icon>open</button>
+            <button mat-button (click)="openEditCourseDialog(course)"><mat-icon>edit</mat-icon>edit</button>
+            <button mat-button (click)="deleteCourse(course)"><mat-icon>delete</mat-icon>delete</button>
+          </mat-card-actions>
+          <mat-card-footer>
+          </mat-card-footer>
+        </mat-card>
+      </li>
+    </ul>
+    <button mat-button style="width: 100%;" (click)="openAddCourseDialog()"> Add new Course</button>
+  </div>
+</div>

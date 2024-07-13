@@ -1,0 +1,9 @@
+<div *ngIf="assessment" class="coursePanel">
+  <h2>{{ assessment?.name }}</h2>
+  <ul>
+    <li *ngFor="let fileAttachment of assessment?.fileAttachments">
+      <span (click)="triggerFocusChange(fileAttachment)">{{ fileAttachment.name }}</span>
+    </li>
+  </ul>
+  <p>assessment-panel works!</p>
+</div>

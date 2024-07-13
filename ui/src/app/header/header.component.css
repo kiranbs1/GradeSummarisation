@@ -1,0 +1,24 @@
+/* Custom class for the mat-toolbar */
+.custom-toolbar {
+  background-color: #111; /* Background color for the toolbar */
+  color: white; /* Text color for the toolbar */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+}
+
+/* Styling for the span inside the toolbar */
+.mat-toolbar-container {
+  color: white; /* Text color for the span */
+  font-weight: bold; /* Optional: Make the text bold */
+}
+
+/* Spacer to push the button to the right */
+.spacer {
+  flex: 1; /* Take up remaining space */
+}
+
+/* Optional: Custom styles for the button */
+.custom-button {
+  color: black; /* Text color for the button */
+  background-color: white; /* Background color for the button */
+}

@@ -1,0 +1,29 @@
+<div *ngIf="courseModule" class="coursePanel">
+  <h2>{{ courseModule?.name }}</h2>
+  <ul>
+    <li *ngFor="let assessment of courseModule?.assessments">
+      <mat-card class="mat-card">
+        <mat-card-header>
+          <mat-card-title>
+            <p>{{assessment.name}}</p>
+          </mat-card-title>
+          <mat-card-subtitle> Assessment Type: {{assessment.assessmentType}} </mat-card-subtitle>
+          <mat-card-subtitle> Assessment Weight: {{assessment.assessmentWeight}} </mat-card-subtitle>
+          <mat-card-subtitle> Assessment Mark: {{assessment.mark}}% </mat-card-subtitle>
+          <mat-card-subtitle> Assessment Completed: {{assessment.completed}} </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p> {{assessment.description}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="triggerFocusChange(assessment)"><mat-icon>open_in_full</mat-icon>open</button>
+          <button mat-button (click)="openEditAssessmentDialog(assessment)"><mat-icon>edit</mat-icon>edit</button>
+          <button mat-button (click)="deleteAssessment(assessment)"><mat-icon>delete</mat-icon>delete</button>
+        </mat-card-actions>
+        <mat-card-footer>
+        </mat-card-footer>
+      </mat-card>
+    </li>
+  </ul>
+  <button mat-button style="width: 100%;" (click)="openAddAssessmentDialog()"> Add new Assessment</button>
+</div>

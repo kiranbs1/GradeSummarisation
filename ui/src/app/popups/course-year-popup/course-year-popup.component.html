@@ -1,0 +1,28 @@
+<h1 mat-dialog-title> {{ title }} </h1>
+<div mat-dialog-content class="form-container">
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput required [(ngModel)]="courseYearName" placeholder="Course Year Name*">
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput required [(ngModel)]="yearNumber" placeholder="Year Number*">
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput required [(ngModel)]="yearWeight" placeholder="Year Weight*">
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="description" placeholder="Description">
+    </mat-form-field>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="saveCourseYear()"> Save Course Year</button>
+  <button mat-raised-button (click)="closePopup()"> Close</button>
+</div>

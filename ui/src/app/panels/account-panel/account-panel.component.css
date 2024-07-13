@@ -1,0 +1,16 @@
+.accountPanel span {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: block; /* Ensure the span takes up the full width */
+  padding: 2px 0; /* Add padding for better spacing */
+  border:1px solid black;
+}
+
+.accountPanel span:hover {
+  background-color: #575757; /* Highlight on hover */
+}
+.mat-card {
+  margin: 3%;
+  width: 96%;
+  text-align: left;
+  float: left;
+}

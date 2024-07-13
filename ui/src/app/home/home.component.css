@@ -1,0 +1,28 @@
+/* Ensure the header stays at the top */
+app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2; /* Ensure it stays above other content */
+  background-color: #111;
+  color: white;
+}
+
+/* Adjust the wrapper to start below the header */
+.wrapper {
+  display: flex;
+  height: calc(100vh - 64px); /* Adjust according to the header's height */
+  margin-top: 64px; /* Height of the header */
+}
+
+/* Sidebar container adjustments */
+.sidebar-container {
+  width: 230px;
+}
+
+/* Content container adjustments */
+.content-container {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}

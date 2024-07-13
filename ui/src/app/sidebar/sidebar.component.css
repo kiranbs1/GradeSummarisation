@@ -1,0 +1,39 @@
+.sidebar {
+  height: calc(100vh - 64px); /* Full height minus the header */
+  width: 230px;
+  position: fixed;
+  top: 64px; /* Start below the header */
+  left: 0;
+  overflow-y: auto;
+  padding-top: 10px;
+  background-color: #111;
+  color: white;
+}
+/* Sidebar specific styles */
+
+.sidebar div {
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.sidebar ul ul {
+  padding-left: 10px;
+}
+
+.sidebar ul ul ul {
+  padding-left: 15px;
+}
+
+.sidebar span {
+  cursor: pointer;
+  display: block;
+  padding: 2px 0;
+}
+
+.sidebar span:hover {
+  background-color: #575757;
+}

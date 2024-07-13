@@ -1,0 +1,30 @@
+<div class="sidebar">
+  <div *ngIf="account">
+    <span (click)="selectItem(account)">{{ account.email }}</span>
+    <ul>
+      <li *ngFor="let course of account?.courses">
+        <span (click)="selectItem(course)">{{ course.name }}</span>
+        <ul>
+          <li *ngFor="let courseYear of course?.courseYears">
+            <span (click)="selectItem(courseYear)">{{ courseYear.name}}</span>
+            <ul>
+              <li *ngFor="let courseModule of courseYear?.courseModules">
+                <span (click)="selectItem(courseModule)">{{ courseModule.name }}</span>
+                <ul>
+                  <li *ngFor="let assessment of courseModule?.assessments">
+                    <span (click)="selectItem(assessment)">{{ assessment.name }}</span>
+                    <ul>
+                      <li *ngFor="let fileAttachment of assessment?.fileAttachments">
+                        <span (click)="selectItem(fileAttachment)">{{ fileAttachment.name }}</span>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>

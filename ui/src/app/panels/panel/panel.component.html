@@ -1,0 +1,14 @@
+<!--<div *ngIf="selectedItem">-->
+<!--  <app-account-panel *ngIf="selectedItem?.userAccountId" [account]="selectedItem" [onFocusChange]="onFocusChange"></app-account-panel>-->
+<!--&lt;!&ndash;  <app-account-panel [account]="selectedItem" [onFocusChange]="onFocusChange"></app-account-panel>&ndash;&gt;-->
+
+<!--</div>-->
+
+<div *ngIf="selectedItem">
+  <app-account-panel *ngIf="isAccountDTO(selectedItem)" [account]="selectedItem" (focusChange)="onFocusChange($event)"></app-account-panel>
+  <app-course-panel *ngIf="isCourseDTO(selectedItem)" [course]="selectedItem" (focusChange)="onFocusChange($event)"></app-course-panel>
+  <app-course-year-panel *ngIf="isCourseYearDTO(selectedItem)" [courseYear]="selectedItem" (focusChange)="onFocusChange($event)"></app-course-year-panel>
+  <app-course-module-panel *ngIf="isCourseModuleDTO(selectedItem)" [courseModule]="selectedItem" (focusChange)="onFocusChange($event)"></app-course-module-panel>
+  <app-assessment-panel *ngIf="isAssessmentDTO(selectedItem)" [assessment]="selectedItem" (focusChange)="onFocusChange($event)"></app-assessment-panel>
+  <app-file-attachment-panel *ngIf="isFileAttachmentDTO(selectedItem)" [fileAttachment]="selectedItem" (focusChange)="onFocusChange($event)"></app-file-attachment-panel>
+</div>

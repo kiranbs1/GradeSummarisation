@@ -1,0 +1,23 @@
+<h1 mat-dialog-title> {{ title }} </h1>
+<div mat-dialog-content class="form-container">
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput required [(ngModel)]="courseModuleName" placeholder="Module Name*">
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput required [(ngModel)]="moduleWeight" placeholder="Module Weight*">
+    </mat-form-field>
+  </div>
+  <div class="form-row">
+    <mat-form-field class="full-width">
+      <input matInput [(ngModel)]="description" placeholder="Description">
+    </mat-form-field>
+  </div>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="saveCourse()"> Save Course Module</button>
+  <button mat-raised-button (click)="closePopup()"> Close</button>
+</div>

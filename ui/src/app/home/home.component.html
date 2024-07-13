@@ -1,0 +1,13 @@
+<div>
+  <app-header></app-header>
+  <div class="wrapper">
+    <div class="sidebar-container">
+      <app-sidebar (clickedItemEvent)="sidebarItemEvent($event)"></app-sidebar>
+    </div>
+    <div class="content-container">
+      <div>
+        <app-panel></app-panel>
+      </div>
+    </div>
+  </div>
+</div>

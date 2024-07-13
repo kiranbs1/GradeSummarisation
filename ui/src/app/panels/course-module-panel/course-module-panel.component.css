@@ -1,0 +1,9 @@
+.course-module-panel span {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: block; /* Ensure the span takes up the full width */
+  padding: 2px 0; /* Add padding for better spacing */
+}
+
+.course-module-panel span:hover {
+  background-color: #575757; /* Highlight on hover */
+}
