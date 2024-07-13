@@ -1,0 +1,22 @@
+logging:
+  level:
+    org.springframework.security: "TRACE"
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: "Ov23li7Xkm5PRBN7PpSc"
+            client-secret: "1f4a1cf761851d276dd08a4d2e24b3e0129d9582"
+            redirect_uri: "http://localhost:4200/callback"
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/GradeSummarisation"
+    username: "postgres"
+    password: "Kirkirbs1234"
+  jpa:
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.PostgreSQLDialect"
+    hibernate:
+      ddl-auto: "update"

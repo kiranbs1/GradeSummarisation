@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ebbe74f-ab64-4d4e-b8bd-26a32e99b9df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ui2/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui2/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui2/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ui2/src/main.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ui2" />
+  </component>
+  <component name="ProjectId" id="2ikwioUzAIcJsrO7aCcscLjoQOi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/kiran/Documents/post uni projects/GradeSummarisation/backend"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ebbe74f-ab64-4d4e-b8bd-26a32e99b9df" name="Changes" comment="" />
+      <created>1720048015586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720048015586</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
