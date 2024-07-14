@@ -49,40 +49,17 @@ The application follows a standard RESTful architecture with a clear separation 
 
 2. **Backend Setup:**
 
-    - Navigate to the backend directory:
-
-        ```sh
-        cd backend
-        ```
+    - Open Backend folder in any Java IDE
 
     - Set up PostgreSQL database and update the `application.yaml` file with your database credentials.
 
-    - Run the Spring Boot application:
-
-        ```sh
-        ./mvnw spring-boot:run
-        ```
+    - GradeSummarisationApplication.java
         
-3. **Frontend Setup:**
+4. **Frontend Setup:**
 
-    - Navigate to the frontend directory:
+    - Open Ui folder in any Angular IDE
+    - Run/ Serve the CLI 
 
-        ```sh
-        cd frontend
-        ```
-
-    - Install the dependencies:
-
-        ```sh
-        npm install
-        ```
-
-    - Start the Angular application:
-
-        ```sh
-        ng serve
-        ```
-
-4. **Access the Application:**
+5. **Access the Application:**
 
     Open your browser and navigate to `http://localhost:4200` to access the course management website.
