@@ -8,12 +8,12 @@ spring:
         registration:
           github:
             client-id: "Ov23li7Xkm5PRBN7PpSc"
-            client-secret: "1f4a1cf761851d276dd08a4d2e24b3e0129d9582"
+            client-secret: "******"
             redirect_uri: "http://localhost:4200/callback"
   datasource:
     url: "jdbc:postgresql://localhost:5432/GradeSummarisation"
     username: "postgres"
-    password: "Kirkirbs1234"
+    password: "******"
   jpa:
     properties:
       hibernate:
